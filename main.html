@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <caption>Tabela 1.3 - Valores utilizados para treinamento da rede neural</caption>
+        <tr>
+            <th>x1</th>
+            <th>x2</th>
+            <th>x3</th>
+            <th>x4</th>
+            <th>d</th>
+        </tr>
+        <tr>
+            <th>0,4329	</th>
+            <th>-1,3719</th>	
+            <th>0,7022</th>	
+            <th>-0,8535</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>0,3024	</th>
+            <th>0,2286	</th>   
+            <th>0,8630</th>	
+            <th>2,7909</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>0,1349	</th>
+            <th>-0,6445</th>	
+            <th>1,0530</th>	
+            <th>0,5687</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>0,3374	</th>
+            <th>-1,7163</th>	
+            <th>0,3670</th>	
+            <th>-0,6283</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>1,1434	</th>
+            <th>-0,0485</th>	
+            <th>0,6637</th>	
+            <th>1,2606</th>
+            <th>1,0000</th>
+        </tr>            
+        <tr>
+            <th>1,3749	</th>
+            <th>-0,5071</th>	
+            <th>0,4464</th>	
+            <th>1,3009</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>0,7221	</th>
+            <th>-0,7587</th>	
+            <th>0,7681</th>	
+            <th>-0,5592</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>0,4403	</th>
+            <th>-0,8072</th>	
+            <th>0,5154</th>	
+            <th>-0,3129</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>-0,5231	</th>
+            <th>0,3548	</th>   
+            <th>0,2538</th>	
+            <th>1,5776</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>0,3255	</th>
+            <th>-2,0000</th>
+            <th>0,7112</th>	
+            <th>-1,1209</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>0,5824	</th>
+            <th>1,3915	</th>   
+            <th>-0,2291</th>
+            <th>4,1735</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>0,1340	</th>
+            <th>0,6081	</th>   
+            <th>0,4450</th>	
+            <th>3,2230</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>0,1480	</th>
+            <th>-0,2988</th>	
+            <th>0,4778</th>	
+            <th>0,8649</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>0,7359	</th>
+            <th>0,1869	</th>   
+            <th>-0,0872</th>
+            <th>2,3584</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>0,7115	</th>
+            <th>-1,1469</th>	
+            <th>0,3394</th>	
+            <th>0,9573</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>0,8251	</th>
+            <th>-1,2840</th>	
+            <th>0,8452</th>	
+            <th>1,2382</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>0,1569	</th>
+            <th>0,3712	</th>   
+            <th>0,8825</th>	
+            <th>1,7633</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>0,0033	</th>
+            <th>0,6835	</th>   
+            <th>0,5389</th>	
+            <th>2,8249</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>0,4243	</th>
+            <th>0,8313	</th>   
+            <th>0,2634</th>	
+            <th>3,5855</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>1,0490	</th>
+            <th>0,1326	</th>   
+            <th>0,9138</th>	
+            <th>1,9792</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>1,4276	</th>
+            <th>0,5331	</th>   
+            <th>-0,0145</th>
+            <th>3,7286</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>0,5971	</th>
+            <th>1,4865	</th>  
+            <th> 0,2904</th>
+            <th>4,6069</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>0,8475	</th>
+            <th>2,1479	</th>   
+            <th>0,3179</th>	
+            <th>5,8235</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>1,3967	</th>
+            <th>-0,4171</th>
+            <th>0,6443</th>	
+            <th>1,3927</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>0,0044	</th>
+            <th>1,5378	</th>   
+            <th>0,6099</th>	
+            <th>4,7755</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>0,2201	</th>
+            <th>-0,5668</th>	
+            <th>0,0515</th>	
+            <th>0,7829</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>0,6300	</th>
+            <th>-1,2480</th>	
+            <th>0,8591</th>	
+            <th>0,8093</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>-0,2479	</th>
+            <th>0,8960	</th>   
+            <th>0,0547</th>	
+            <th>1,7381</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>-0,3088	</th>
+            <th>-0,0929</th>	
+            <th>0,8659</th>	
+            <th>1,5483</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>-0,5180	</th>
+            <th>1,4974	</th>   
+            <th>0,5453</th>	
+            <th>2,3993</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>0,6833	</th>
+            <th>0,8266	</th>   
+            <th>0,0829</th>	
+            <th>2,8864</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>0,4353	</th>
+            <th>-1,4066</th>	
+            <th>0,4207</th>	
+            <th>-0,4879</th>
+            <th>1,0000</th>
+        </tr>
+        <tr>
+            <th>-0,1069	</th>
+            <th>-3,2329</th>	
+            <th>0,1856</th>	
+            <th>-2,4572</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>0,4662	</th>
+            <th>0,6261	</th>   
+            <th>0,7304</th>	
+            <th>3,4370</th>
+            <th>-1,0000</th>
+        </tr>
+        <tr>
+            <th>0,8298	</th>
+            <th>-1,4089</th>	
+            <th>0,3119</th>	
+            <th>1,3235</th>
+            <th>-1,0000</th>
+        </tr>
+    </table>
+
+    <table>
+        <caption>Tabela 1.2 - Pessos encontrados pela rede neural</caption>
+        <tr>
+            <th>Treinamento</th>
+            <th>b_ant</th>
+            <th>w1_ant</th>
+            <th>w2_ant</th>
+            <th>w3_ant</th>
+            <th>w4_ant</th>
+            <th>b_novo</th>
+            <th>w1_novo</th>
+            <th>w2_novo</th>
+            <th>w3_novo</th>
+            <th>w4_novo</th>
+            <th>Número de ciclos</th>
+        </tr>
+        <tr>
+            <th id = "Coluna0_linha0">Teste</th>
+            <th id = "Coluna1_linha0">Teste</th>
+            <th id = "Coluna2_linha0">Teste</th>
+            <th id = "Coluna3_linha0">Teste</th>
+            <th id = "Coluna4_linha0">Teste</th>
+            <th id = "Coluna5_linha0">Teste</th>
+            <th id = "Coluna6_linha0">Teste</th>
+            <th id = "Coluna7_linha0">Teste</th>
+            <th id = "Coluna8_linha0">Teste</th>
+            <th id = "Coluna9_linha0">Teste</th>
+            <th id = "Coluna10_linha0">Teste</th>
+            <th id = "Coluna11_linha0">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Coluna0_linha1">Teste</th>
+            <th id = "Coluna1_linha1">Teste</th>
+            <th id = "Coluna2_linha1">Teste</th>
+            <th id = "Coluna3_linha1">Teste</th>
+            <th id = "Coluna4_linha1">Teste</th>
+            <th id = "Coluna5_linha1">Teste</th>
+            <th id = "Coluna6_linha1">Teste</th>
+            <th id = "Coluna7_linha1">Teste</th>
+            <th id = "Coluna8_linha1">Teste</th>
+            <th id = "Coluna9_linha1">Teste</th>
+            <th id = "Coluna10_linha1">Teste</th>
+            <th id = "Coluna11_linha1">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Coluna0_linha2">Teste</th>
+            <th id = "Coluna1_linha2">Teste</th>
+            <th id = "Coluna2_linha2">Teste</th>
+            <th id = "Coluna3_linha2">Teste</th>
+            <th id = "Coluna4_linha2">Teste</th>
+            <th id = "Coluna5_linha2">Teste</th>
+            <th id = "Coluna6_linha2">Teste</th>
+            <th id = "Coluna7_linha2">Teste</th>
+            <th id = "Coluna8_linha2">Teste</th>
+            <th id = "Coluna9_linha2">Teste</th>
+            <th id = "Coluna10_linha2">Teste</th>
+            <th id = "Coluna11_linha2">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Coluna0_linha3">Teste</th>
+            <th id = "Coluna1_linha3">Teste</th>
+            <th id = "Coluna2_linha3">Teste</th>
+            <th id = "Coluna3_linha3">Teste</th>
+            <th id = "Coluna4_linha3">Teste</th>
+            <th id = "Coluna5_linha3">Teste</th>
+            <th id = "Coluna6_linha3">Teste</th>
+            <th id = "Coluna7_linha3">Teste</th>
+            <th id = "Coluna8_linha3">Teste</th>
+            <th id = "Coluna9_linha3">Teste</th>
+            <th id = "Coluna10_linha3">Teste</th>
+            <th id = "Coluna11_linha3">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Coluna0_linha4">Teste</th>
+            <th id = "Coluna1_linha4">Teste</th>
+            <th id = "Coluna2_linha4">Teste</th>
+            <th id = "Coluna3_linha4">Teste</th>
+            <th id = "Coluna4_linha4">Teste</th>
+            <th id = "Coluna5_linha4">Teste</th>
+            <th id = "Coluna6_linha4">Teste</th>
+            <th id = "Coluna7_linha4">Teste</th>
+            <th id = "Coluna8_linha4">Teste</th>
+            <th id = "Coluna9_linha4">Teste</th>
+            <th id = "Coluna10_linha4">Teste</th>
+            <th id = "Coluna11_linha4">Teste</th>
+        </tr>
+    </table>
+
+    <table>
+        <caption>Tabela 1.3 - Valores de testes para a rede neural</caption>
+        <tr>
+            <th>x1</th>
+            <th>x2</th>
+            <th>x3</th>
+            <th>x4</th>
+            <th>treino 1</th>
+            <th>treino 2</th>
+            <th>treino 3</th>
+            <th>treino 4</th>
+            <th>treino 5</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha0">0,9694	</th> 
+            <th id = "Teste_Coluna1_linha0">0,6909</th>	
+            <th id = "Teste_Coluna2_linha0">0,4334</th>	
+            <th id = "Teste_Coluna3_linha0">3,4965</th>
+            <th id = "Teste_Coluna4_linha0">Teste</th>
+            <th id = "Teste_Coluna5_linha0">Teste</th>
+            <th id = "Teste_Coluna6_linha0">Teste</th>
+            <th id = "Teste_Coluna7_linha0">Teste</th>
+            <th id = "Teste_Coluna8_linha0">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha1">0,5427	</th> 
+            <th id = "Teste_Coluna1_linha1">1,3832</th>	
+            <th id = "Teste_Coluna2_linha1">0,6390</th>	
+            <th id = "Teste_Coluna3_linha1">4,0352</th>
+            <th id = "Teste_Coluna4_linha1">Teste</th>
+            <th id = "Teste_Coluna5_linha1">Teste</th>
+            <th id = "Teste_Coluna6_linha1">Teste</th>
+            <th id = "Teste_Coluna7_linha1">Teste</th>
+            <th id = "Teste_Coluna8_linha1">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha2">0,6081	</th> 
+            <th id = "Teste_Coluna1_linha2">-0,9196</th>	
+            <th id = "Teste_Coluna2_linha2">0,5925</th>	
+            <th id = "Teste_Coluna3_linha2">0,1016</th>
+            <th id = "Teste_Coluna4_linha2">Teste</th>
+            <th id = "Teste_Coluna5_linha2">Teste</th>
+            <th id = "Teste_Coluna6_linha2">Teste</th>
+            <th id = "Teste_Coluna7_linha2">Teste</th>
+            <th id = "Teste_Coluna8_linha2">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha3">-0,1618</th>  
+            <th id = "Teste_Coluna1_linha3">0,4694</th>	
+            <th id = "Teste_Coluna2_linha3">0,2030</th>	
+            <th id = "Teste_Coluna3_linha3">3,0117</th>
+            <th id = "Teste_Coluna4_linha3">Teste</th>
+            <th id = "Teste_Coluna5_linha3">Teste</th>
+            <th id = "Teste_Coluna6_linha3">Teste</th>
+            <th id = "Teste_Coluna7_linha3">Teste</th>
+            <th id = "Teste_Coluna8_linha3">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha4">0,1870	</th> 
+            <th id = "Teste_Coluna1_linha4">-0,2578</th>	
+            <th id = "Teste_Coluna2_linha4">0,6124</th>	
+            <th id = "Teste_Coluna3_linha4">1,7749</th>
+            <th id = "Teste_Coluna4_linha4">Teste</th>
+            <th id = "Teste_Coluna5_linha4">Teste</th>
+            <th id = "Teste_Coluna6_linha4">Teste</th>
+            <th id = "Teste_Coluna7_linha4">Teste</th>
+            <th id = "Teste_Coluna8_linha4">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha5">0,4891	</th> 
+            <th id = "Teste_Coluna1_linha5">-0,5276</th>	
+            <th id = "Teste_Coluna2_linha5">0,4378</th>	
+            <th id = "Teste_Coluna3_linha5">0,6439</th>
+            <th id = "Teste_Coluna4_linha5">Teste</th>
+            <th id = "Teste_Coluna5_linha5">Teste</th>
+            <th id = "Teste_Coluna6_linha5">Teste</th>
+            <th id = "Teste_Coluna7_linha5">Teste</th>
+            <th id = "Teste_Coluna8_linha5">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha6">0,3777	</th> 
+            <th id = "Teste_Coluna1_linha6">2,0149</th>	
+            <th id = "Teste_Coluna2_linha6">0,7423</th>	
+            <th id = "Teste_Coluna3_linha6">3,3932</th>
+            <th id = "Teste_Coluna4_linha6">Teste</th>
+            <th id = "Teste_Coluna5_linha6">Teste</th>
+            <th id = "Teste_Coluna6_linha6">Teste</th>
+            <th id = "Teste_Coluna7_linha6">Teste</th>
+            <th id = "Teste_Coluna8_linha6">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha7">1,1498	</th> 
+            <th id = "Teste_Coluna1_linha7">-0,4067</th>	
+            <th id = "Teste_Coluna2_linha7">0,2469</th>	
+            <th id = "Teste_Coluna3_linha7">1,5866</th>
+            <th id = "Teste_Coluna4_linha7">Teste</th>
+            <th id = "Teste_Coluna5_linha7">Teste</th>
+            <th id = "Teste_Coluna6_linha7">Teste</th>
+            <th id = "Teste_Coluna7_linha7">Teste</th>
+            <th id = "Teste_Coluna8_linha7">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha8">0,9325	</th> 
+            <th id = "Teste_Coluna1_linha8">1,0950</th>	
+            <th id = "Teste_Coluna2_linha8">1,0359</th>	
+            <th id = "Teste_Coluna3_linha8">3,3591</th>
+            <th id = "Teste_Coluna4_linha8">Teste</th>
+            <th id = "Teste_Coluna5_linha8">Teste</th>
+            <th id = "Teste_Coluna6_linha8">Teste</th>
+            <th id = "Teste_Coluna7_linha8">Teste</th>
+            <th id = "Teste_Coluna8_linha8">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha9">0,5060	</th> 
+            <th id = "Teste_Coluna1_linha9">1,3317</th>	
+            <th id = "Teste_Coluna2_linha9">0,9222</th>	
+            <th id = "Teste_Coluna3_linha9">3,7174</th>
+            <th id = "Teste_Coluna4_linha9">Teste</th>
+            <th id = "Teste_Coluna5_linha9">Teste</th>
+            <th id = "Teste_Coluna6_linha9">Teste</th>
+            <th id = "Teste_Coluna7_linha9">Teste</th>
+            <th id = "Teste_Coluna8_linha9">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha10">0,0497	</th> 
+            <th id = "Teste_Coluna1_linha10">-2,0656</th>	
+            <th id = "Teste_Coluna2_linha10">0,6124</th>	
+            <th id = "Teste_Coluna3_linha10">-0,6585</th>
+            <th id = "Teste_Coluna4_linha10">Teste</th>
+            <th id = "Teste_Coluna5_linha10">Teste</th>
+            <th id = "Teste_Coluna6_linha10">Teste</th>
+            <th id = "Teste_Coluna7_linha10">Teste</th>
+            <th id = "Teste_Coluna8_linha10">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha11">0,4004	</th> 
+            <th id = "Teste_Coluna1_linha11">3,5369</th>	
+            <th id = "Teste_Coluna2_linha11">0,9766</th>	
+            <th id = "Teste_Coluna3_linha11">5,3532</th>
+            <th id = "Teste_Coluna4_linha11">Teste</th>
+            <th id = "Teste_Coluna5_linha11">Teste</th>
+            <th id = "Teste_Coluna6_linha11">Teste</th>
+            <th id = "Teste_Coluna7_linha11">Teste</th>
+            <th id = "Teste_Coluna8_linha11">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha12">-0,1874</th>  
+            <th id = "Teste_Coluna1_linha12">1,3343</th>	
+            <th id = "Teste_Coluna2_linha12">0,5374</th>	
+            <th id = "Teste_Coluna3_linha12">3,2189</th>
+            <th id = "Teste_Coluna4_linha12">Teste</th>
+            <th id = "Teste_Coluna5_linha12">Teste</th>
+            <th id = "Teste_Coluna6_linha12">Teste</th>
+            <th id = "Teste_Coluna7_linha12">Teste</th>
+            <th id = "Teste_Coluna8_linha12">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha13">0,5060	</th> 
+            <th id = "Teste_Coluna1_linha13">1,3317</th>	
+            <th id = "Teste_Coluna2_linha13">0,9222</th>	
+            <th id = "Teste_Coluna3_linha13">3,7174</th>
+            <th id = "Teste_Coluna4_linha13">Teste</th>
+            <th id = "Teste_Coluna5_linha13">Teste</th>
+            <th id = "Teste_Coluna6_linha13">Teste</th>
+            <th id = "Teste_Coluna7_linha13">Teste</th>
+            <th id = "Teste_Coluna8_linha13">Teste</th>
+        </tr>
+        <tr>
+            <th id = "Teste_Coluna0_linha14">1,6375	</th> 
+            <th id = "Teste_Coluna1_linha14">-0,7911</th>	
+            <th id = "Teste_Coluna2_linha14">0,7537</th>	
+            <th id = "Teste_Coluna3_linha14">0,5515</th>
+            <th id = "Teste_Coluna4_linha14">Teste</th>
+            <th id = "Teste_Coluna5_linha14">Teste</th>
+            <th id = "Teste_Coluna6_linha14">Teste</th>
+            <th id = "Teste_Coluna7_linha14">Teste</th>
+            <th id = "Teste_Coluna8_linha14">Teste</th>
+        </tr>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>
